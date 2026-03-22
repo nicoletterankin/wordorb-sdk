@@ -21,7 +21,8 @@
     }
   },
   "bin": {
-    "wordorb": "./dist/cli.js"
+    "wordorb-sdk": "dist/cli.js",
+    "wordorb": "dist/cli.js"
   },
   "files": [
     "dist",
