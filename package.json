@@ -1,0 +1,72 @@
+{
+  "name": "@wordorb/sdk",
+  "version": "1.0.0",
+  "description": "Official SDK for the Word Orb API — vocabulary enrichment, multilingual translations, daily lessons, assessments, and knowledge graph. 162K+ words across 47 languages.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./errors": {
+      "import": "./dist/errors.js",
+      "types": "./dist/errors.d.ts"
+    },
+    "./types": {
+      "import": "./dist/types.js",
+      "types": "./dist/types.d.ts"
+    }
+  },
+  "bin": {
+    "wordorb": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "node --test dist/index.js"
+  },
+  "keywords": [
+    "vocabulary",
+    "dictionary",
+    "translation",
+    "pronunciation",
+    "etymology",
+    "multilingual",
+    "language",
+    "education",
+    "ai",
+    "mcp",
+    "nlp",
+    "linguistics",
+    "word",
+    "definition",
+    "ethics",
+    "edtech",
+    "robots"
+  ],
+  "author": "Lesson of the Day PBC <hello@lotdpbc.com> (https://lotdpbc.com)",
+  "license": "MIT",
+  "homepage": "https://wordorb.ai",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nicoletterankin/wordorb-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nicoletterankin/wordorb-sdk/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.4.0"
+  }
+}
