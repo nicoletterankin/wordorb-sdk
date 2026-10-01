@@ -6,7 +6,7 @@
 // ── Client Options ──────────────────────────────────────────────────
 
 export interface WordOrbOptions {
-  /** API key (starts with `wo_`). Omit for free tier (50 req/day). */
+  /** API key (starts with `wo_`). Omit to use the no-key limit (200 calls/day per IP). */
   apiKey?: string;
   /** Base URL override. Default: `https://wordorb.ai` */
   baseUrl?: string;

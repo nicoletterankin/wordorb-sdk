@@ -1,14 +1,14 @@
 /**
  * @wordorb/sdk — Official Node.js / TypeScript SDK for the Word Orb API
  *
- * Zero-config free tier (50 requests/day, no API key required).
+ * Works with no API key (200 calls/day per IP); a key gives 10,000 calls/day.
  * Full docs: https://wordorb.ai/docs
  *
  * @example
  * ```ts
  * import { WordOrb } from "@wordorb/sdk";
  *
- * const orb = new WordOrb();                     // free tier
+ * const orb = new WordOrb();                     // no key: 200 calls/day per IP
  * const orb = new WordOrb({ apiKey: "wo_..." }); // authenticated
  *
  * const word = await orb.enrich("courage");
