@@ -13,7 +13,7 @@ npm install @wordorb/sdk
 ```ts
 import { WordOrb } from "@wordorb/sdk";
 
-const orb = new WordOrb(); // free tier — 50 requests/day, no key needed
+const orb = new WordOrb(); // $0 tier: 50 requests a day, no key needed
 
 const word = await orb.enrich("courage");
 console.log(word.def);        // "Courage is the ability to face fear..."
@@ -33,11 +33,11 @@ const orb = new WordOrb({ apiKey: "wo_..." });
 // Set WORDORB_API_KEY=wo_...
 const orb = new WordOrb(); // auto-reads env var
 
-// Option 3: Free tier (no key)
+// Option 3: $0 tier (no key)
 const orb = new WordOrb(); // 50 requests/day
 ```
 
-Get a free API key at [wordorb.ai/pricing](https://wordorb.ai/pricing).
+Get an API key at [wordorb.ai/pricing](https://wordorb.ai/pricing).
 
 ## API Reference
 
@@ -262,7 +262,7 @@ print(word["def"])
 
 ```ts
 const orb = new WordOrb({
-  apiKey: "wo_...",           // optional — omit for free tier
+  apiKey: "wo_...",           // optional: omit for the $0 tier
   baseUrl: "https://wordorb.ai", // default
   timeout: 15000,             // ms, default 15s
   maxRetries: 3,              // rate-limit retries, default 3
